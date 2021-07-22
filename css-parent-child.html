@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS parent child</title>
+    <style>
+        p { 
+            color: blue; 
+        }
+
+        div p { 
+            color: green; 
+            font-size: 18px;
+        }
+        /* This wont work (div p) is more specific */
+        .div-with-class { 
+            color: purple; 
+        }
+        /* by adding p, it will work  */
+        .div-with-class p { 
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <p>stand alone paragraph</p>
+    <div>
+        <p>paragraph inside div</p>
+    </div>
+    <div class="div-with-class">
+        <p>paragraph inside div with class</p>
+        <p class="paragraph-with-class">paragraph inside div with a class</p>
+    </div>
+    <ul class="Striped-odd">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+    <ul class="Striped-even">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+    <ul class="First-child-border-bottom">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+</body>
+</html>

@@ -7,6 +7,16 @@
     <meta name="description" content="my super cool site" />
 </head>
 <body>
+    <header>
+        <p>Semantic HTML</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kitchen-sink.html">All out tags</a></li>
+                <li><a href="semantic-markup.html">Semantic page</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1>Kitchen sink</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
@@ -36,7 +46,33 @@
 
     </ul>
 
-    <a href="https://google.com">Link to google/a>
+    <a href="https://google.com">Link to google</a>
+    <a href="https://yahoo.com" target="_blank">Link to Yahoo</a>
+
+    <!-- This is a comment-->
+    <img src="http://placehold.it/300x300" />
+
+    <!-- This is a internal image-->
+    <img src="./assets/images/Online Groceries-cuate.png" />
+
+    <style>
+        <!-- table th is used to style the entire table (more effective)-->
+        table th {
+            border: 1px solid black; 
+        }
+    </style>
+    <table>
+        <thead>
+            <th>Header one</th>
+            <th>Header two</th>
+            <th>Header three</th>
+        </thead>
+        <tbody>
+            <td>table cell one</td>
+            <td>table cell two</td>
+            <td>table cell three</td>
+        </tbody>
+    </table>
 
 </body>
 </html>
